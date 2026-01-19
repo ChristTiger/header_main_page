@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background: url("/etudiant-toge.jpg") right / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(27, 27, 27, 0.75) 35%,
+    rgba(37, 37, 37, 0.25) 65%,
+    rgba(47, 47, 47, 0.05)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  padding: 5rem;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #e5e7eb;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #e5e7eb;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-actions button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-apply {
+  background-color: #b71c1c;
+  color: white;
+}
+
+.btn-academics {
+  background-color: white;
+  color: #000;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  align-items: flex-end;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: white;
+}
+
+.feature h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+.feature.dark {
+  background-color: #0a2e5c;
+  height: 150px;
+}
+
+.feature.blue {
+  background-color: #0c4a8a;
+  height: 170px;
+}
+
+.feature.red {
+  background-color: #c4161c;
+  height: 250px;
+}
+
+.avatar-wrapper {
+  padding: 10px 5px;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  margin-left: -12px;
+}
+
+.avatar-count {
+  width: 40px;
+  height: 40px;
+  margin-left: -12px;
+  border-radius: 50%;
+  background-color: #1e6fd9;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+}
