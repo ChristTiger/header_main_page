@@ -1,6 +1,11 @@
+main{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   background: url("/etudiant-toge.jpg") right / cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -70,7 +75,8 @@
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  position: relative;
+  position: absolute;
+  bottom: 0;
   align-items: flex-end;
 }
 
